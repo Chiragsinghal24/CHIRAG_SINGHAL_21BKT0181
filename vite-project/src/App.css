@@ -1,0 +1,136 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; /* Dark background for the rest of the app */
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  padding: 20px;
+  color: white;
+}
+
+.App .status{
+  font-size: 2rem;
+  
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: black; /* Background color for the board */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+  font-size: 2rem;
+}
+
+.cell {
+  width: 150px;
+  height: 150px;
+  border: 2px solid white; /* Dark border for cells */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.cell.A {
+  background-color: #1a1a1a; /* Dark background for A's cells */
+  color: #ff4d4d; /* Red text for A's cells */
+}
+
+.cell.B {
+  background-color: #1a1a1a; /* Dark background for B's cells */
+  color: #4da6ff; /* Blue text for B's cells */
+}
+
+.cell.empty {
+  background-color: #333; /* Dark grey for empty cells */
+}
+
+.cell.selected {
+  border: 2px solid #ffcc00; /* Gold border for selected cells */
+}
+
+/* Prevent border disappearance on focus or active state */
+.cell:focus,
+.cell:active {
+  outline: none;
+  border: 2px solid #ffcc00; /* Keep the selected border on click */
+}
+
+.move-controls {
+  margin-bottom: 20px;
+}
+
+.move-controls button {
+  margin: 5px;
+  padding: 20px 25px;
+  font-size: 2em;
+  cursor: pointer;
+  background-color: #1a1a1a;
+  color: white;
+  border: 2px solid #333;
+}
+
+.status {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: white; /* White text for status */
+}
+
+.move-history {
+  margin-top: 20px;
+  color: white; /* White text for move history */
+}
+
+.move-history h2 {
+  margin-bottom: 0px;
+  font-size: 2rem;
+}
+
+.move-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.move-history li {
+  margin-bottom: 5px;
+  font-size: 2em;
+}
+
+.game-over {
+  margin-top: 20px;
+  color: white; /* White text for game over */
+}
+
+.game-over h2 {
+  color: white ;/* Red text for game over */
+  margin-bottom: 20px;
+}
+
+.game-over button {
+  padding: 10px 20px;
+  font-size: 2em;
+  cursor: pointer;
+  background-color: #1a1a1a;
+  color: white;
+  border: 2px solid #333;
+}
