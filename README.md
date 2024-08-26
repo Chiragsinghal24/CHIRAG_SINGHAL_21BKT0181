@@ -1,4 +1,4 @@
-# Saurav_kumar_21BCE2998
+# CHIRAG_SINGHAL 21BKT0181
 # Chess-Like Game
 
 This project is a chess-like game built using JavaScript for the server-side logic, WebSocket for real-time communication, and React for the frontend. The game features a 5x5 board with two players, each controlling characters with unique movement patterns.
@@ -17,8 +17,8 @@ This project is a chess-like game built using JavaScript for the server-side log
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/yourusername/chess-like-game.git
-    cd chess-like-game
+    git clone https://github.com/Chiragsinghal24/CHIRAG_SINGHAL_21BKT0181.git
+    cd chess-game
     ```
 
 2. **Install Dependencies:**
