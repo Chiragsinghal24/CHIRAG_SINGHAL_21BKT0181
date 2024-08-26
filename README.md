@@ -1,9 +1,26 @@
 # CHIRAG_SINGHAL 21BKT0181
-# Chess-Like Game
+# Turn-based Chess-like Game
 
-This project is a chess-like game built using JavaScript for the server-side logic, WebSocket for real-time communication, and React for the frontend. The game features a 5x5 board with two players, each controlling characters with unique movement patterns.
+## Objective
+Develop a turn-based chess-like game with a server-client architecture, utilizing websockets for real-time communication and a web-based user interface.
+# Game Rules
+## Characters and Movement
+There are three types of characters available:
+ 1. **Pawn:**
+    Moves one block in any direction (Left, Right, Forward, or Backward).
+    Move commands: L (Left), R (Right), F (Forward), B (Backward)
+2. **Hero1:**
+   Moves two blocks straight in any direction.
+   Kills any opponent's character in its path.
+   Move commands: L (Left), R (Right), F (Forward), B (Backward)
+3. **Hero2:**
+    Moves two blocks diagonally in any direction.
+    Kills any opponent's character in its path.
+    Move commands: FL (Forward-Left), FR (Forward-Right), BL (Backward-Left), BR (Backward-Right)
+    All moves are relative to the player's perspective.    
 
-## Features
+## Screenshots of Testing
+## Feature
 
 - **Real-Time Multiplayer:** Players connect and play in real-time using WebSockets.
 - **Character Types:** Three types of characters (Pawns, Hero1, Hero2) with unique movement and combat abilities.
